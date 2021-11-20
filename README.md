@@ -1,3 +1,3 @@
-# [CSS](https://developer.mozilla.org/CSS)
+# [`TDoR`](index.css)
 
-## [Cascading<br>Style<br>Sheets](https://webmural.com/css)
+[color coded](color.css) [with tape](https://github.com/s9a/tape)

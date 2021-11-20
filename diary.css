@@ -1,0 +1,57 @@
+html {
+  font-family: sans-serif;
+  font-size: calc(1em + 1vmin + 2vmax);
+}
+
+body {
+  padding-inline-start: 5vw;
+  padding-inline-end: 5vw;
+  margin: auto;
+  overflow-wrap: anywhere;
+}
+
+figure {
+  margin: auto;
+}
+
+footer {
+  line-height: 1.2;
+  font-size: .6em;
+  max-width: 20em;
+  margin-block-start: 10vh;
+}
+
+nav {
+  font-weight: bold;
+  margin-block: 5vh 8vh;
+}
+
+dl {
+  display: flex;
+  flex-flow: column;
+}
+
+dt {
+  font-weight: bold;
+  margin: 0;
+  margin-block-start: 5vh;
+  padding: .5ex;
+}
+
+dd {
+  margin: 0;
+  padding: .5ex;
+}
+
+nav a {
+  padding: .5ex;
+}
+
+dd::first-letter {
+  font-weight: bold;
+}
+
+:focus {
+  outline-style: dotted;
+  outline-width: thick;
+}

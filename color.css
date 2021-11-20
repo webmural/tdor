@@ -1,24 +1,48 @@
-::selection {
-  background: hotpink;
-  color: black;
-}
+/*
+tape color code
+https://s9a.page/tape
+https://github.com/s9a/tape/releases/tag/v0.3.0
+*/
+
+:root{--tape-white:#f5f5f5;--tape-black:#090909;--tape-pink:#fbbfff;--tape-yellow:#eee833;--tape-blue:#11dff1;--tape-green:#44f477}.tape-white{--tape-hex:var(--tape-white)}.tape-blue{--tape-hex:var(--tape-blue)}.tape-pink{--tape-hex:var(--tape-pink)}.tape-green{--tape-hex:var(--tape-green)}.tape-yellow{--tape-hex:var(--tape-yellow)}.tape-clean :not(.tape-clash),.tape-clean:not(.tape-clash){background:0 0;color:inherit}.tape-flat{border-color:transparent}.tape-flap{border-color:currentColor}.tape-blue,.tape-green,.tape-pink,.tape-white,.tape-yellow{background:var(--tape-hex)!important;color:var(--tape-black)!important}.tape-black{background:var(--tape-black)!important;color:var(--tape-hex,var(--tape-white))!important}
+
+/*
+transgender flag inspired tape colors
+*/
 
 :root {
-  color: #ccc;
-  background: #111;
+  --tape-black: #111;
+  --tape-blue: #55cdfc;
+  --tape-pink: #f7a8b8;
+  --tape-white: #f2f1f0;
 }
 
-:link {
-  color: hotpink;
+/*
+tune color to respect eyes
+*/
+
+@media all,
+  (prefers-contrast: less),
+  (prefers-color-scheme: dark) {
+  :root {
+    --tape-white: #ecebea;
+  }
 }
 
-:visited {
-  color: violet;
+/*
+extra interactive affordance
+*/
+
+:link:hover,
+:link:focus {
+  filter: saturate(120%);
 }
 
 :focus {
-  text-shadow:
-    -5px 0 0 plum,
-    3px 3px 0 plum,
-    3px -3px 0 plum;
+  outline-color: #bae;
+}
+
+::selection {
+  color: black;
+  background: #bae;
 }
